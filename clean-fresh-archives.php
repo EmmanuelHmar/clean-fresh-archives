@@ -318,6 +318,7 @@ class CleanArchivesReloaded {
 }
 
 // Start this plugin once all other plugins are fully loaded
+// Replace create_function with anonymous function
 add_action( 'init', create_function( '', 'global $CleanArchivesReloaded; $CleanArchivesReloaded = new CleanArchivesReloaded();' ) );
 
 
