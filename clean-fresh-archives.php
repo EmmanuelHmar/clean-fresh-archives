@@ -2,16 +2,16 @@
 
 **************************************************************************
 
-Plugin Name:  Clean Archives Reloaded
-Plugin URI:   http://www.viper007bond.com/wordpress-plugins/clean-archives-reloaded/
-Description:  A slick, Javascript-enhanced post archive list generator for WordPress 2.5+.
-Version:      3.2.0
-Author:       Viper007Bond
-Author URI:   http://www.viper007bond.com/
+Plugin Name:  Clean Fresh Archives
+Plugin URI:   https://github.com/EmmanuelHmar/clean-fresh-archives
+Description:  Upgrade of clean archives reloaded
+Version:      0.0.1
+Author:       ELH
+Author URI:   https://github.com/EmmanuelHmar/
 
 **************************************************************************
 
-Copyright (C) 2008-2011 Viper007Bond
+Copyright (C) 2019 - ELH
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -38,7 +38,7 @@ class CleanArchivesReloaded {
 	# Configuration has been moved to the new options page at Settings -> Clean Archives.
 	# You can also set the configuration via the shortcode tag.
 
-	var $version = '3.2.0';
+	var $version = '0.0.1';
 
 	// Class initialization
 	function CleanArchivesReloaded() {
@@ -319,7 +319,11 @@ class CleanArchivesReloaded {
 
 // Start this plugin once all other plugins are fully loaded
 // Replace create_function with anonymous function
-add_action( 'init', create_function( '', 'global $CleanArchivesReloaded; $CleanArchivesReloaded = new CleanArchivesReloaded();' ) );
+// add_action( 'init', create_function( '', 'global $CleanArchivesReloaded; $CleanArchivesReloaded = new CleanArchivesReloaded();' ) );
+add_action( 'init', function($CleanArchivesReloaded){
+	$CleanArchivesReloaded = new CleanArchivesReloaded();
+});
+
 
 
 // Some backwards compatibility wrapper functions
