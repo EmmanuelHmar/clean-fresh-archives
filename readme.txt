@@ -1,4 +1,4 @@
-=== Clean Fresh Archives Reloaded ===
+=== Clean Fresh Archives ===
 Contributors: Viper007Bond, ELH
 Tags: archive, archives, posts
 Requires at least: 2.5
@@ -19,7 +19,7 @@ Check out one of my sites' [archive page](https://emmanuelhmar.com/archives/).
 
 == Installation ==
 
-###Updgrading From A Previous Version###
+###Upgrading From A Previous Version###
 
 To upgrade from a previous version of this plugin, delete the entire folder and files from the previous version of the plugin and then follow the installation instructions below.
 
@@ -84,3 +84,10 @@ https://wordpress.org/plugins/clean-archives-reloaded/
 ** 0.0.1 **
 - fixed deprecated create_function
 - changed plugin info and other texts from original plugin
+
+** 0.0.2**
+- changed version
+- use esc_js instead of js_escape - deprecated
+
+** 0.0.3 **
+- Fix "Methods with the same name as their class will not be constructors in a future version of PHP"

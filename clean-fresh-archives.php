@@ -5,9 +5,11 @@
 Plugin Name:  Clean Fresh Archives
 Plugin URI:   https://github.com/EmmanuelHmar/clean-fresh-archives
 Description:  Upgrade of clean archives reloaded
-Version:      0.0.1
+Version:      0.0.3
 Author:       ELH
 Author URI:   https://github.com/EmmanuelHmar/
+License: 	  GPL V2 or later
+
 
 **************************************************************************
 
@@ -38,10 +40,11 @@ class CleanArchivesReloaded {
 	# Configuration has been moved to the new options page at Settings -> Clean Archives.
 	# You can also set the configuration via the shortcode tag.
 
-	var $version = '0.0.1';
+	var $version = '0.0.3';
 
 	// Class initialization
-	function CleanArchivesReloaded() {
+	// CleanArchivesReloaded function name changed - deprecated
+	function __construct() {
 		if ( !function_exists('add_shortcode') )
 			return;
 
