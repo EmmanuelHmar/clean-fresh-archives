@@ -188,13 +188,13 @@ class CleanArchivesReloaded {
 					jQuery(this).next('ul').slideToggle('fast');
 				});
 				jQuery('.car-collapse').find('.car-toggler').click(function() {
-					if ( '<?php echo js_escape( __('Expand All', 'clean-archives-reloaded') ); ?>' == jQuery(this).text() ) {
+					if ( '<?php echo esc_js( __('Expand All', 'clean-archives-reloaded') ); ?>' == jQuery(this).text() ) {
 						jQuery(this).parent('.car-container').find('.car-monthlisting').show();
-						jQuery(this).text('<?php echo js_escape( __('Collapse All', 'clean-archives-reloaded') ); ?>');
+						jQuery(this).text('<?php echo esc_js( __('Collapse All', 'clean-archives-reloaded') ); ?>');
 					}
 					else {
 						jQuery(this).parent('.car-container').find('.car-monthlisting').hide();
-						jQuery(this).text('<?php echo js_escape( __('Expand All', 'clean-archives-reloaded') ); ?>');
+						jQuery(this).text('<?php echo esc_js( __('Expand All', 'clean-archives-reloaded') ); ?>');
 					}
 					return false;
 				});
